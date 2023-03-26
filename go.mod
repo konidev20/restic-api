@@ -23,7 +23,6 @@ require (
 	github.com/pkg/sftp v1.13.5
 	github.com/pkg/xattr v0.4.10-0.20221120235825-35026bbbd013
 	github.com/restic/chunker v0.4.0
-	github.com/restic/restic v0.15.1
 	golang.org/x/crypto v0.7.0
 	golang.org/x/net v0.8.0
 	golang.org/x/oauth2 v0.6.0
@@ -40,6 +39,7 @@ require (
 	cloud.google.com/go/compute/metadata v0.2.3 // indirect
 	cloud.google.com/go/iam v0.12.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/internal v1.1.2 // indirect
+	github.com/dnaeon/go-vcr v1.2.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.2 // indirect

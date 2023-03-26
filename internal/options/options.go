@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/restic/restic/internal/errors"
+	"github.com/konidev20/restic-api/internal/errors"
 )
 
 // Options holds options in the form key=value.

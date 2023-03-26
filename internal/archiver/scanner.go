@@ -6,8 +6,8 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/restic/restic/internal/debug"
-	"github.com/restic/restic/internal/fs"
+	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/restic-api/internal/fs"
 )
 
 // Scanner  traverses the targets and calls the function Result with cumulated

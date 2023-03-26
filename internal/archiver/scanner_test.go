@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/restic/restic/internal/fs"
-	restictest "github.com/restic/restic/internal/test"
+	"github.com/konidev20/restic-api/internal/fs"
+	restictest "github.com/konidev20/restic-api/internal/test"
 )
 
 func TestScanner(t *testing.T) {

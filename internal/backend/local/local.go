@@ -8,13 +8,13 @@ import (
 	"path/filepath"
 	"syscall"
 
-	"github.com/restic/restic/internal/backend"
-	"github.com/restic/restic/internal/backend/layout"
-	"github.com/restic/restic/internal/backend/sema"
-	"github.com/restic/restic/internal/debug"
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/fs"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/backend"
+	"github.com/konidev20/restic-api/internal/backend/layout"
+	"github.com/konidev20/restic-api/internal/backend/sema"
+	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/fs"
+	"github.com/konidev20/restic-api/internal/restic"
 
 	"github.com/cenkalti/backoff/v4"
 )

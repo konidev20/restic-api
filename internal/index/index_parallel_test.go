@@ -5,11 +5,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/index"
-	"github.com/restic/restic/internal/repository"
-	"github.com/restic/restic/internal/restic"
-	rtest "github.com/restic/restic/internal/test"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/index"
+	"github.com/konidev20/restic-api/internal/repository"
+	"github.com/konidev20/restic-api/internal/restic"
+	rtest "github.com/konidev20/restic-api/internal/test"
 )
 
 var repoFixture = filepath.Join("..", "repository", "testdata", "test-repo.tar.gz")

@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/restic/restic/internal/errors"
+	"github.com/konidev20/restic-api/internal/errors"
 )
 
 // Rename (rather than remove) the running version. The running binary will be locked

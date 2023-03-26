@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/konidev20/restic-api/internal/restic"
 	"github.com/pkg/errors"
-	"github.com/restic/restic/internal/restic"
 )
 
 // WritableTreeMap also support saving

@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/konidev20/restic-api/internal/backend"
+	"github.com/konidev20/restic-api/internal/backend/mem"
+	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/internal/test"
 	"github.com/pkg/errors"
-	"github.com/restic/restic/internal/backend"
-	"github.com/restic/restic/internal/backend/mem"
-	"github.com/restic/restic/internal/restic"
-	"github.com/restic/restic/internal/test"
 )
 
 func loadAndCompare(t testing.TB, be restic.Backend, h restic.Handle, data []byte) {

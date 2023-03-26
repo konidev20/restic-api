@@ -4,9 +4,9 @@ import (
 	"context"
 	"io"
 
-	"github.com/restic/restic/internal/debug"
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/restic"
 )
 
 type backendReaderAt struct {

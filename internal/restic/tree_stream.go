@@ -6,8 +6,8 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/restic/restic/internal/debug"
-	"github.com/restic/restic/internal/ui/progress"
+	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/restic-api/internal/ui/progress"
 	"golang.org/x/sync/errgroup"
 )
 

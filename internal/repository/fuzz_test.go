@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/restic/restic/internal/backend/mem"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/backend/mem"
+	"github.com/konidev20/restic-api/internal/restic"
 	"golang.org/x/sync/errgroup"
 )
 

@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/restic/restic/internal/test"
-	"github.com/restic/restic/internal/ui/progress"
+	"github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/restic-api/internal/ui/progress"
 )
 
 func TestCounter(t *testing.T) {

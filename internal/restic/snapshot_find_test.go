@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/restic/restic/internal/repository"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/repository"
+	"github.com/konidev20/restic-api/internal/restic"
 )
 
 func TestFindLatestSnapshot(t *testing.T) {

@@ -6,12 +6,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/restic/restic/internal/backend/local"
-	"github.com/restic/restic/internal/backend/mem"
-	"github.com/restic/restic/internal/backend/retry"
-	"github.com/restic/restic/internal/crypto"
-	"github.com/restic/restic/internal/restic"
-	"github.com/restic/restic/internal/test"
+	"github.com/konidev20/restic-api/internal/backend/local"
+	"github.com/konidev20/restic-api/internal/backend/mem"
+	"github.com/konidev20/restic-api/internal/backend/retry"
+	"github.com/konidev20/restic-api/internal/crypto"
+	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/internal/test"
 
 	"github.com/restic/chunker"
 )

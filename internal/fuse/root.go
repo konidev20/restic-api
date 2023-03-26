@@ -6,9 +6,9 @@ package fuse
 import (
 	"os"
 
-	"github.com/restic/restic/internal/bloblru"
-	"github.com/restic/restic/internal/debug"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/bloblru"
+	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/restic-api/internal/restic"
 
 	"github.com/anacrolix/fuse/fs"
 )

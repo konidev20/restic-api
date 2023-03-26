@@ -5,8 +5,8 @@ import (
 	"context"
 	"path/filepath"
 
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/restic"
 )
 
 func (d *Dumper) dumpZip(ctx context.Context, ch <-chan *restic.Node) (err error) {

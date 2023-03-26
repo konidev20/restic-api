@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/restic/restic/internal/errors"
+	"github.com/konidev20/restic-api/internal/errors"
 )
 
 type SnapshotGroupByOptions struct {

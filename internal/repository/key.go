@@ -8,12 +8,12 @@ import (
 	"os/user"
 	"time"
 
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/restic"
 
-	"github.com/restic/restic/internal/backend"
-	"github.com/restic/restic/internal/crypto"
-	"github.com/restic/restic/internal/debug"
+	"github.com/konidev20/restic-api/internal/backend"
+	"github.com/konidev20/restic-api/internal/crypto"
+	"github.com/konidev20/restic-api/internal/debug"
 )
 
 var (

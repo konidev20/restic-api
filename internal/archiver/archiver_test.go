@@ -15,13 +15,13 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/restic/restic/internal/backend/mem"
-	"github.com/restic/restic/internal/checker"
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/fs"
-	"github.com/restic/restic/internal/repository"
-	"github.com/restic/restic/internal/restic"
-	restictest "github.com/restic/restic/internal/test"
+	"github.com/konidev20/restic-api/internal/backend/mem"
+	"github.com/konidev20/restic-api/internal/checker"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/fs"
+	"github.com/konidev20/restic-api/internal/repository"
+	"github.com/konidev20/restic-api/internal/restic"
+	restictest "github.com/konidev20/restic-api/internal/test"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -2182,7 +2182,7 @@ func TestMetadataChanged(t *testing.T) {
 	// make another snapshot
 	_, node3 := snapshot(t, repo, fs, sn, "testfile")
 	// Override username and group to empty string - in case underlying system has user with UID 51234
-	// See https://github.com/restic/restic/issues/2372
+	// See https://github.com/konidev20/restic-api/issues/2372
 	node3.User = ""
 	node3.Group = ""
 

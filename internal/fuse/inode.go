@@ -7,7 +7,7 @@ import (
 	"encoding/binary"
 
 	"github.com/cespare/xxhash/v2"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/restic"
 )
 
 // inodeFromName generates an inode number for a file in a meta dir.

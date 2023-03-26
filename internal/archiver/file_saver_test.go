@@ -8,10 +8,10 @@ import (
 	"runtime"
 	"testing"
 
+	"github.com/konidev20/restic-api/internal/fs"
+	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/internal/test"
 	"github.com/restic/chunker"
-	"github.com/restic/restic/internal/fs"
-	"github.com/restic/restic/internal/restic"
-	"github.com/restic/restic/internal/test"
 	"golang.org/x/sync/errgroup"
 )
 

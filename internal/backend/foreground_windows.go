@@ -4,7 +4,7 @@ import (
 	"os/exec"
 	"syscall"
 
-	"github.com/restic/restic/internal/errors"
+	"github.com/konidev20/restic-api/internal/errors"
 	"golang.org/x/sys/windows"
 )
 

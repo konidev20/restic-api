@@ -7,7 +7,7 @@ import (
 	"context"
 
 	"github.com/anacrolix/fuse"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/restic"
 )
 
 type other struct {

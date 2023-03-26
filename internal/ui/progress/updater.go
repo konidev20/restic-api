@@ -3,8 +3,8 @@ package progress
 import (
 	"time"
 
-	"github.com/restic/restic/internal/debug"
-	"github.com/restic/restic/internal/ui/signals"
+	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/restic-api/internal/ui/signals"
 )
 
 // An UpdateFunc is a callback for a (progress) Updater.

@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/restic/restic/internal/options"
-	"github.com/restic/restic/internal/test"
+	"github.com/konidev20/restic-api/internal/options"
+	"github.com/konidev20/restic-api/internal/test"
 )
 
 type secretTest struct {

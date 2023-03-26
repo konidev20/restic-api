@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/cenkalti/backoff/v4"
-	"github.com/restic/restic/internal/backend/mock"
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/restic"
-	"github.com/restic/restic/internal/test"
+	"github.com/konidev20/restic-api/internal/backend/mock"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/internal/test"
 )
 
 func TestBackendSaveRetry(t *testing.T) {

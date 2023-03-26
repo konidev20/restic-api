@@ -3,7 +3,7 @@ package restic
 import (
 	"testing"
 
-	rtest "github.com/restic/restic/internal/test"
+	rtest "github.com/konidev20/restic-api/internal/test"
 )
 
 func TestIDsString(t *testing.T) {

@@ -7,10 +7,10 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/repository"
-	"github.com/restic/restic/internal/restic"
-	"github.com/restic/restic/internal/test"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/repository"
+	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/internal/test"
 )
 
 func TestUpgradeRepoV2(t *testing.T) {

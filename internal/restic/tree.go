@@ -7,9 +7,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/restic/restic/internal/errors"
+	"github.com/konidev20/restic-api/internal/errors"
 
-	"github.com/restic/restic/internal/debug"
+	"github.com/konidev20/restic-api/internal/debug"
 )
 
 // Tree is an ordered list of nodes.

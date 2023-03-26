@@ -5,11 +5,11 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/restic/restic/internal/backend/rclone"
-	"github.com/restic/restic/internal/backend/test"
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/restic"
-	rtest "github.com/restic/restic/internal/test"
+	"github.com/konidev20/restic-api/internal/backend/rclone"
+	"github.com/konidev20/restic-api/internal/backend/test"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/restic"
+	rtest "github.com/konidev20/restic-api/internal/test"
 )
 
 func newTestSuite(t testing.TB) *test.Suite {

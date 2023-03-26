@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/restic/restic/internal/archiver"
-	"github.com/restic/restic/internal/fs"
-	"github.com/restic/restic/internal/repository"
-	"github.com/restic/restic/internal/restic"
-	rtest "github.com/restic/restic/internal/test"
+	"github.com/konidev20/restic-api/internal/archiver"
+	"github.com/konidev20/restic-api/internal/fs"
+	"github.com/konidev20/restic-api/internal/repository"
+	"github.com/konidev20/restic-api/internal/restic"
+	rtest "github.com/konidev20/restic-api/internal/test"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -710,7 +710,7 @@ func checkConsistentInfo(t testing.TB, file string, fi os.FileInfo, modtime time
 	}
 }
 
-// test inspired from test case https://github.com/restic/restic/issues/1212
+// test inspired from test case https://github.com/konidev20/restic-api/issues/1212
 func TestRestorerConsistentTimestampsAndPermissions(t *testing.T) {
 	timeForTest := time.Date(2019, time.January, 9, 1, 46, 40, 0, time.UTC)
 

@@ -6,8 +6,8 @@ import (
 	"sort"
 	"testing"
 
+	"github.com/konidev20/restic-api/internal/restic"
 	"github.com/pkg/errors"
-	"github.com/restic/restic/internal/restic"
 )
 
 // TestTree is used to construct a list of trees for testing the walker.

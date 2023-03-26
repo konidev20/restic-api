@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/restic/restic/internal/errors"
+	"github.com/konidev20/restic-api/internal/errors"
 
-	"github.com/restic/restic/internal/debug"
+	"github.com/konidev20/restic-api/internal/debug"
 )
 
 // Lock represents a process locking the repository for an operation.

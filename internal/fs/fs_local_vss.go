@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/restic/restic/internal/errors"
+	"github.com/konidev20/restic-api/internal/errors"
 )
 
 // ErrorHandler is used to report errors via callback

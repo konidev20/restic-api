@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/restic/restic/internal/debug"
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/fs"
+	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/fs"
 )
 
 // Tree recursively defines how a snapshot should look like when

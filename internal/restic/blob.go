@@ -3,8 +3,8 @@ package restic
 import (
 	"fmt"
 
-	"github.com/restic/restic/internal/crypto"
-	"github.com/restic/restic/internal/errors"
+	"github.com/konidev20/restic-api/internal/crypto"
+	"github.com/konidev20/restic-api/internal/errors"
 )
 
 // Blob is one part of a file or a tree.

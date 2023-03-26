@@ -8,10 +8,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/restic/restic/internal/debug"
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/fs"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/fs"
+	"github.com/konidev20/restic-api/internal/restic"
 	"golang.org/x/sync/errgroup"
 )
 

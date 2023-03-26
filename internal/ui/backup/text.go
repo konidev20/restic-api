@@ -5,10 +5,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/restic/restic/internal/archiver"
-	"github.com/restic/restic/internal/restic"
-	"github.com/restic/restic/internal/ui"
-	"github.com/restic/restic/internal/ui/termstatus"
+	"github.com/konidev20/restic-api/internal/archiver"
+	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/internal/ui"
+	"github.com/konidev20/restic-api/internal/ui/termstatus"
 )
 
 // TextProgress reports progress for the `backup` command.

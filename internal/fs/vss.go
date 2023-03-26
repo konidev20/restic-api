@@ -4,7 +4,7 @@
 package fs
 
 import (
-	"github.com/restic/restic/internal/errors"
+	"github.com/konidev20/restic-api/internal/errors"
 )
 
 // MountPoint is a dummy for non-windows platforms to let client code compile.

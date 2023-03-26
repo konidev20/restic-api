@@ -9,8 +9,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/restic/restic/internal/restic"
-	rtest "github.com/restic/restic/internal/test"
+	"github.com/konidev20/restic-api/internal/restic"
+	rtest "github.com/konidev20/restic-api/internal/test"
 )
 
 func TestDefaultLayout(t *testing.T) {

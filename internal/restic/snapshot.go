@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/restic/restic/internal/debug"
+	"github.com/konidev20/restic-api/internal/debug"
 )
 
 // Snapshot is the state of a resource at one point in time.

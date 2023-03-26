@@ -3,7 +3,7 @@ package restic
 import (
 	"context"
 
-	"github.com/restic/restic/internal/debug"
+	"github.com/konidev20/restic-api/internal/debug"
 	"golang.org/x/sync/errgroup"
 )
 

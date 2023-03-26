@@ -6,12 +6,12 @@ import (
 	"os"
 	"path"
 
-	"github.com/restic/restic/internal/backend/layout"
-	"github.com/restic/restic/internal/backend/s3"
-	"github.com/restic/restic/internal/cache"
-	"github.com/restic/restic/internal/debug"
-	"github.com/restic/restic/internal/errors"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/backend/layout"
+	"github.com/konidev20/restic-api/internal/backend/s3"
+	"github.com/konidev20/restic-api/internal/cache"
+	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/restic-api/internal/restic"
 )
 
 func init() {

@@ -11,14 +11,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/restic/restic/internal/bloblru"
-	"github.com/restic/restic/internal/repository"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/bloblru"
+	"github.com/konidev20/restic-api/internal/repository"
+	"github.com/konidev20/restic-api/internal/restic"
 
 	"github.com/anacrolix/fuse"
 	"github.com/anacrolix/fuse/fs"
 
-	rtest "github.com/restic/restic/internal/test"
+	rtest "github.com/konidev20/restic-api/internal/test"
 )
 
 func testRead(t testing.TB, f fs.Handle, offset, length int, data []byte) {

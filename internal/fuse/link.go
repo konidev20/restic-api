@@ -8,7 +8,7 @@ import (
 
 	"github.com/anacrolix/fuse"
 	"github.com/anacrolix/fuse/fs"
-	"github.com/restic/restic/internal/restic"
+	"github.com/konidev20/restic-api/internal/restic"
 )
 
 // Statically ensure that *link implements the given interface

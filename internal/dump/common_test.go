@@ -5,11 +5,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/restic/restic/internal/archiver"
-	"github.com/restic/restic/internal/fs"
-	"github.com/restic/restic/internal/repository"
-	"github.com/restic/restic/internal/restic"
-	rtest "github.com/restic/restic/internal/test"
+	"github.com/konidev20/restic-api/internal/archiver"
+	"github.com/konidev20/restic-api/internal/fs"
+	"github.com/konidev20/restic-api/internal/repository"
+	"github.com/konidev20/restic-api/internal/restic"
+	rtest "github.com/konidev20/restic-api/internal/test"
 )
 
 func prepareTempdirRepoSrc(t testing.TB, src archiver.TestDir) (string, restic.Repository) {
