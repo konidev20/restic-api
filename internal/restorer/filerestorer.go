@@ -7,11 +7,11 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/konidev20/restic-api/internal/crypto"
+	"github.com/konidev20/restic-api/crypto"
 	"github.com/konidev20/restic-api/internal/debug"
 	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/internal/repository"
-	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/repository"
+	"github.com/konidev20/restic-api/restic"
 )
 
 // TODO if a blob is corrupt, there may be good blob copies in other packs

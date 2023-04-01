@@ -3,7 +3,7 @@ package migrations
 import (
 	"context"
 
-	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/restic"
 )
 
 // Migration implements a data migration.

@@ -8,10 +8,10 @@ import (
 	"time"
 
 	"github.com/konidev20/restic-api/internal/checker"
-	"github.com/konidev20/restic-api/internal/crypto"
+	"github.com/konidev20/restic-api/crypto"
 	"github.com/konidev20/restic-api/internal/index"
-	"github.com/konidev20/restic-api/internal/repository"
-	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/repository"
+	"github.com/konidev20/restic-api/restic"
 	rtest "github.com/konidev20/restic-api/internal/test"
 )
 

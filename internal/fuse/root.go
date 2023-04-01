@@ -8,7 +8,7 @@ import (
 
 	"github.com/konidev20/restic-api/internal/bloblru"
 	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/restic"
 
 	"github.com/anacrolix/fuse/fs"
 )

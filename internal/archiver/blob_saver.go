@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/restic"
 	"golang.org/x/sync/errgroup"
 )
 

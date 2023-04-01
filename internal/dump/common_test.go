@@ -7,8 +7,8 @@ import (
 
 	"github.com/konidev20/restic-api/internal/archiver"
 	"github.com/konidev20/restic-api/internal/fs"
-	"github.com/konidev20/restic-api/internal/repository"
-	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/repository"
+	"github.com/konidev20/restic-api/restic"
 	rtest "github.com/konidev20/restic-api/internal/test"
 )
 

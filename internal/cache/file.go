@@ -6,12 +6,12 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/konidev20/restic-api/internal/backend"
-	"github.com/konidev20/restic-api/internal/crypto"
+	"github.com/pkg/errors"
+	"github.com/konidev20/restic-api/backend"
+	"github.com/konidev20/restic-api/crypto"
 	"github.com/konidev20/restic-api/internal/debug"
 	"github.com/konidev20/restic-api/internal/fs"
-	"github.com/konidev20/restic-api/internal/restic"
-	"github.com/pkg/errors"
+	"github.com/konidev20/restic-api/restic"
 )
 
 func (c *Cache) filename(h restic.Handle) string {

@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/crypto"
+	"github.com/konidev20/restic-api/crypto"
 	"github.com/konidev20/restic-api/internal/debug"
 	"github.com/konidev20/restic-api/internal/fs"
-	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/restic"
 )
 
 // TestSnapshot creates a new snapshot of path.

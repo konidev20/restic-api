@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/konidev20/restic-api/internal/archiver"
-	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/restic"
 	"github.com/konidev20/restic-api/internal/ui"
 	"github.com/konidev20/restic-api/internal/ui/termstatus"
 )

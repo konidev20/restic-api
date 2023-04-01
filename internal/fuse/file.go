@@ -9,7 +9,7 @@ import (
 
 	"github.com/konidev20/restic-api/internal/debug"
 	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/restic"
 
 	"github.com/anacrolix/fuse"
 	"github.com/anacrolix/fuse/fs"
@@ -50,7 +50,7 @@ func (f *file) Attr(ctx context.Context, a *fuse.Attr) error {
 	a.Inode = f.inode
 	a.Mode = f.node.Mode
 	a.Size = f.node.Size
-	a.Blocks = (f.node.Size / blockSize) + 1
+	a.Blocks = (f.node.Size + blockSize - 1) / blockSize
 	a.BlockSize = blockSize
 	a.Nlink = uint32(f.node.Links)
 

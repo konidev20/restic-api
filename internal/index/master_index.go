@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/restic"
+	"github.com/konidev20/restic-api/restic"
 	"github.com/konidev20/restic-api/internal/ui/progress"
 	"golang.org/x/sync/errgroup"
 )

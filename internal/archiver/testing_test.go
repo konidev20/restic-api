@@ -10,7 +10,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/konidev20/restic-api/internal/fs"
-	"github.com/konidev20/restic-api/internal/repository"
+	"github.com/konidev20/restic-api/repository"
 	restictest "github.com/konidev20/restic-api/internal/test"
 )
 
