@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/internal/test"
 )
 
 func TestByteReader(t *testing.T) {

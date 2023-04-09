@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/internal/errors"
 )
 
 // LoadJSONUnpacked decrypts the data and afterwards calls json.Unmarshal on

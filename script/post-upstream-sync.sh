@@ -7,13 +7,13 @@ set -e
 RESTIC_SOURCE=../restic
 
 fix_paths() {
-  gomove -d "$1" github.com/restic/restic github.com/konidev20/restic-api
-  gomove -d "$1" github.com/konidev20/restic-api/internal/crypto github.com/konidev20/restic-api/crypto
-  gomove -d "$1" github.com/konidev20/restic-api/internal/repository github.com/konidev20/restic-api/repository 
-  gomove -d "$1" github.com/konidev20/restic-api/internal/restic github.com/konidev20/restic-api/restic
-  gomove -d "$1" github.com/konidev20/restic-api/internal/backend github.com/konidev20/restic-api/backend
-  gomove -d "$1" github.com/konidev20/restic-api/internal/pack github.com/konidev20/restic-api/pack
-  gomove -d "$1" github.com/konidev20/restic-api/internal/walker github.com/konidev20/restic-api/walker
+  gomove -d "$1" github.com/restic/restic github.com/konidev20/rapi
+  gomove -d "$1" github.com/konidev20/rapi/internal/crypto github.com/konidev20/rapi/crypto
+  gomove -d "$1" github.com/konidev20/rapi/internal/repository github.com/konidev20/rapi/repository 
+  gomove -d "$1" github.com/konidev20/rapi/internal/restic github.com/konidev20/rapi/restic
+  gomove -d "$1" github.com/konidev20/rapi/internal/backend github.com/konidev20/rapi/backend
+  gomove -d "$1" github.com/konidev20/rapi/internal/pack github.com/konidev20/rapi/pack
+  gomove -d "$1" github.com/konidev20/rapi/internal/walker github.com/konidev20/rapi/walker
 }
 
 # Sync rapi's public modules

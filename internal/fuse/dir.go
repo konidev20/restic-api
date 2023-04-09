@@ -13,8 +13,8 @@ import (
 	"github.com/anacrolix/fuse"
 	"github.com/anacrolix/fuse/fs"
 
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/restic"
 )
 
 // Statically ensure that *dir implement those interface

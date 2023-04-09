@@ -3,7 +3,7 @@ package index
 import (
 	"hash/maphash"
 
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/restic"
 )
 
 // An indexMap is a chained hash table that maps blob IDs to indexEntries.

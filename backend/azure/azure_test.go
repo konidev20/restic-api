@@ -9,13 +9,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/restic-api/backend"
-	"github.com/konidev20/restic-api/backend/azure"
-	"github.com/konidev20/restic-api/backend/test"
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/internal/options"
-	"github.com/konidev20/restic-api/restic"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/backend"
+	"github.com/konidev20/rapi/backend/azure"
+	"github.com/konidev20/rapi/backend/test"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/internal/options"
+	rtest "github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/restic"
 )
 
 func newAzureTestSuite(t testing.TB) *test.Suite {

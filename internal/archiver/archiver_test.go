@@ -15,13 +15,13 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/konidev20/restic-api/backend/mem"
-	"github.com/konidev20/restic-api/internal/checker"
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/internal/fs"
-	"github.com/konidev20/restic-api/repository"
-	"github.com/konidev20/restic-api/restic"
-	restictest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/backend/mem"
+	"github.com/konidev20/rapi/internal/checker"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/internal/fs"
+	restictest "github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/repository"
+	"github.com/konidev20/rapi/restic"
 	"golang.org/x/sync/errgroup"
 )
 

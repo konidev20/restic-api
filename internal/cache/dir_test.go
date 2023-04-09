@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	rtest "github.com/konidev20/restic-api/internal/test"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 // DefaultDir should honor RESTIC_CACHE_DIR on all platforms.

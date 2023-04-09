@@ -8,14 +8,14 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/internal/hashing"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/internal/hashing"
+	"github.com/konidev20/rapi/restic"
 
-	"github.com/konidev20/restic-api/crypto"
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/fs"
-	"github.com/konidev20/restic-api/pack"
+	"github.com/konidev20/rapi/crypto"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/internal/fs"
+	"github.com/konidev20/rapi/pack"
 
 	"github.com/minio/sha256-simd"
 )

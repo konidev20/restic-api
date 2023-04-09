@@ -9,12 +9,12 @@ import (
 	"io"
 	"testing"
 
-	"github.com/konidev20/restic-api/backend"
-	"github.com/konidev20/restic-api/backend/mem"
-	"github.com/konidev20/restic-api/crypto"
-	"github.com/konidev20/restic-api/pack"
-	"github.com/konidev20/restic-api/restic"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/backend"
+	"github.com/konidev20/rapi/backend/mem"
+	"github.com/konidev20/rapi/crypto"
+	rtest "github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/pack"
+	"github.com/konidev20/rapi/restic"
 )
 
 var testLens = []int{23, 31650, 25860, 10928, 13769, 19862, 5211, 127, 13690, 30231}

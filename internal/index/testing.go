@@ -3,8 +3,8 @@ package index
 import (
 	"testing"
 
-	"github.com/konidev20/restic-api/restic"
-	"github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/restic"
 )
 
 func TestMergeIndex(t testing.TB, mi *MasterIndex) ([]*Index, int) {

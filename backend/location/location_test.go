@@ -5,12 +5,12 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/konidev20/restic-api/backend/b2"
-	"github.com/konidev20/restic-api/backend/local"
-	"github.com/konidev20/restic-api/backend/rest"
-	"github.com/konidev20/restic-api/backend/s3"
-	"github.com/konidev20/restic-api/backend/sftp"
-	"github.com/konidev20/restic-api/backend/swift"
+	"github.com/konidev20/rapi/backend/b2"
+	"github.com/konidev20/rapi/backend/local"
+	"github.com/konidev20/rapi/backend/rest"
+	"github.com/konidev20/rapi/backend/s3"
+	"github.com/konidev20/rapi/backend/sftp"
+	"github.com/konidev20/rapi/backend/swift"
 )
 
 func parseURL(s string) *url.URL {

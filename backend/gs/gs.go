@@ -12,12 +12,12 @@ import (
 	"strings"
 
 	"cloud.google.com/go/storage"
+	"github.com/konidev20/rapi/backend"
+	"github.com/konidev20/rapi/backend/layout"
+	"github.com/konidev20/rapi/backend/sema"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/restic"
 	"github.com/pkg/errors"
-	"github.com/konidev20/restic-api/backend"
-	"github.com/konidev20/restic-api/backend/layout"
-	"github.com/konidev20/restic-api/backend/sema"
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/restic"
 
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"

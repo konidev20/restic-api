@@ -3,7 +3,7 @@ package restic
 import (
 	"syscall"
 
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/errors"
 )
 
 // mknod is not supported on Windows.

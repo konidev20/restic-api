@@ -4,8 +4,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/internal/options"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/internal/options"
 )
 
 // Config contains basic configuration needed to specify swift location for a swift server

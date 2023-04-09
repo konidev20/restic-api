@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/restic"
 )
 
 func init() {

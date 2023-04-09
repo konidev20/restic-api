@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/restic"
 )
 
 // LoadAll reads all data stored in the backend for the handle into the given

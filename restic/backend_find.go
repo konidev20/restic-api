@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/rapi/internal/debug"
 )
 
 // A MultipleIDMatchesError is returned by Find() when multiple IDs with a

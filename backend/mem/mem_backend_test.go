@@ -4,11 +4,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/restic"
 
-	"github.com/konidev20/restic-api/backend/mem"
-	"github.com/konidev20/restic-api/backend/test"
+	"github.com/konidev20/rapi/backend/mem"
+	"github.com/konidev20/rapi/backend/test"
 )
 
 type memConfig struct {

@@ -3,8 +3,8 @@ package restorer_test
 import (
 	"testing"
 
-	"github.com/konidev20/restic-api/internal/restorer"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/internal/restorer"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 // TestHardLinks contains various tests for HardlinkIndex.

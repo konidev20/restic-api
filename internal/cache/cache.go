@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/internal/fs"
+	"github.com/konidev20/rapi/restic"
 	"github.com/pkg/errors"
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/fs"
-	"github.com/konidev20/restic-api/restic"
 )
 
 // Cache manages a local cache.

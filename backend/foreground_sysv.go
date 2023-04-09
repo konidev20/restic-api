@@ -7,7 +7,7 @@ import (
 	"os/exec"
 	"syscall"
 
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/errors"
 )
 
 func startForeground(cmd *exec.Cmd) (bg func() error, err error) {

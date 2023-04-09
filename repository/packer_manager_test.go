@@ -7,9 +7,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/konidev20/restic-api/crypto"
-	"github.com/konidev20/restic-api/restic"
-	"github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/crypto"
+	"github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/restic"
 )
 
 func randomID(rd io.Reader) restic.ID {

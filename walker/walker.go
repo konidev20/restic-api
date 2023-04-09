@@ -7,7 +7,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/restic"
 )
 
 // ErrSkipNode is returned by WalkFunc when a dir node should not be walked.

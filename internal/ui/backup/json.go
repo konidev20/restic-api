@@ -6,10 +6,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/archiver"
-	"github.com/konidev20/restic-api/restic"
-	"github.com/konidev20/restic-api/internal/ui"
-	"github.com/konidev20/restic-api/internal/ui/termstatus"
+	"github.com/konidev20/rapi/internal/archiver"
+	"github.com/konidev20/rapi/internal/ui"
+	"github.com/konidev20/rapi/internal/ui/termstatus"
+	"github.com/konidev20/rapi/restic"
 )
 
 // JSONProgress reports progress for the `backup` command in JSON.

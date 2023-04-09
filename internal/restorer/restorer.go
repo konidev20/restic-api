@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"sync/atomic"
 
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/internal/fs"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/internal/fs"
+	"github.com/konidev20/rapi/restic"
 
 	"golang.org/x/sync/errgroup"
 )

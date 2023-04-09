@@ -15,12 +15,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/restic-api/backend"
-	"github.com/konidev20/restic-api/backend/s3"
-	"github.com/konidev20/restic-api/backend/test"
-	"github.com/konidev20/restic-api/internal/options"
-	"github.com/konidev20/restic-api/restic"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/backend"
+	"github.com/konidev20/rapi/backend/s3"
+	"github.com/konidev20/rapi/backend/test"
+	"github.com/konidev20/rapi/internal/options"
+	rtest "github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/restic"
 )
 
 func mkdir(t testing.TB, dir string) {

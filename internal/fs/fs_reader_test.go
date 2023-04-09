@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/internal/test"
 )
 
 func verifyFileContentOpen(t testing.TB, fs FS, filename string, want []byte) {

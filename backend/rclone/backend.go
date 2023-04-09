@@ -17,11 +17,11 @@ import (
 	"time"
 
 	"github.com/cenkalti/backoff/v4"
-	"github.com/konidev20/restic-api/backend"
-	"github.com/konidev20/restic-api/backend/limiter"
-	"github.com/konidev20/restic-api/backend/rest"
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/backend"
+	"github.com/konidev20/rapi/backend/limiter"
+	"github.com/konidev20/rapi/backend/rest"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/internal/errors"
 	"golang.org/x/net/http2"
 )
 

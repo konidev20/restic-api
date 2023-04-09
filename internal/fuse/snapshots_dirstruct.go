@@ -13,8 +13,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/restic"
 
 	"github.com/minio/sha256-simd"
 )

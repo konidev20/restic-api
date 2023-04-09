@@ -8,11 +8,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/konidev20/restic-api/crypto"
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/repository"
-	"github.com/konidev20/restic-api/restic"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/crypto"
+	"github.com/konidev20/rapi/internal/errors"
+	rtest "github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/repository"
+	"github.com/konidev20/rapi/restic"
 )
 
 type TestBlob struct {

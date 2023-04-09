@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/internal/errors"
 )
 
 // TransportOptions collects various options which can be set for an HTTP based

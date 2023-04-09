@@ -7,8 +7,8 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/konidev20/restic-api/internal/fs"
-	"github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/internal/fs"
+	"github.com/konidev20/rapi/internal/test"
 )
 
 func TestPreallocate(t *testing.T) {

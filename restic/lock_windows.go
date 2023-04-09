@@ -4,7 +4,7 @@ import (
 	"os"
 	"os/user"
 
-	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/rapi/internal/debug"
 )
 
 // uidGidInt always returns 0 on Windows, since uid isn't numbers

@@ -4,16 +4,16 @@ package location
 import (
 	"strings"
 
-	"github.com/konidev20/restic-api/backend/azure"
-	"github.com/konidev20/restic-api/backend/b2"
-	"github.com/konidev20/restic-api/backend/gs"
-	"github.com/konidev20/restic-api/backend/local"
-	"github.com/konidev20/restic-api/backend/rclone"
-	"github.com/konidev20/restic-api/backend/rest"
-	"github.com/konidev20/restic-api/backend/s3"
-	"github.com/konidev20/restic-api/backend/sftp"
-	"github.com/konidev20/restic-api/backend/swift"
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/backend/azure"
+	"github.com/konidev20/rapi/backend/b2"
+	"github.com/konidev20/rapi/backend/gs"
+	"github.com/konidev20/rapi/backend/local"
+	"github.com/konidev20/rapi/backend/rclone"
+	"github.com/konidev20/rapi/backend/rest"
+	"github.com/konidev20/rapi/backend/s3"
+	"github.com/konidev20/rapi/backend/sftp"
+	"github.com/konidev20/rapi/backend/swift"
+	"github.com/konidev20/rapi/internal/errors"
 )
 
 // Location specifies the location of a repository, including the method of

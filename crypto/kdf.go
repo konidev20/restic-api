@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/errors"
 
 	sscrypt "github.com/elithrar/simple-scrypt"
 	"golang.org/x/crypto/scrypt"

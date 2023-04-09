@@ -5,8 +5,8 @@ import (
 	"hash"
 	"io"
 
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/restic"
 )
 
 // Backend passes reads through to an underlying layer and accepts writes, but

@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/errors"
 )
 
 // Reader is a file system which provides a directory with a single file. When

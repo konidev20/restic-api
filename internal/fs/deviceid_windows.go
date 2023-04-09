@@ -6,7 +6,7 @@ package fs
 import (
 	"os"
 
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/errors"
 )
 
 // DeviceID extracts the device ID from an os.FileInfo object by casting it

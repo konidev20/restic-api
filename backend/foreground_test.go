@@ -10,8 +10,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/konidev20/restic-api/backend"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/backend"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func TestForeground(t *testing.T) {

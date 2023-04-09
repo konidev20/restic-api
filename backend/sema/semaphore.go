@@ -5,7 +5,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/errors"
 )
 
 // A Semaphore limits access to a restricted resource.

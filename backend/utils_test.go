@@ -8,12 +8,12 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/konidev20/restic-api/backend"
-	"github.com/konidev20/restic-api/backend/mem"
-	"github.com/konidev20/restic-api/backend/mock"
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/restic"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/backend"
+	"github.com/konidev20/rapi/backend/mem"
+	"github.com/konidev20/rapi/backend/mock"
+	"github.com/konidev20/rapi/internal/errors"
+	rtest "github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/restic"
 )
 
 const KiB = 1 << 10

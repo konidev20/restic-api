@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/fs"
+	"github.com/konidev20/rapi/internal/fs"
 )
 
 func TestWriteZip(t *testing.T) {

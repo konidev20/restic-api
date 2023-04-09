@@ -7,12 +7,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/checker"
-	"github.com/konidev20/restic-api/crypto"
-	"github.com/konidev20/restic-api/internal/index"
-	"github.com/konidev20/restic-api/repository"
-	"github.com/konidev20/restic-api/restic"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/crypto"
+	"github.com/konidev20/rapi/internal/checker"
+	"github.com/konidev20/rapi/internal/index"
+	rtest "github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/repository"
+	"github.com/konidev20/rapi/restic"
 )
 
 func TestMasterIndex(t *testing.T) {

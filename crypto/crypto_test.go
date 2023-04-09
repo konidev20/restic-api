@@ -6,8 +6,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/konidev20/restic-api/crypto"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/crypto"
+	rtest "github.com/konidev20/rapi/internal/test"
 
 	"github.com/restic/chunker"
 )

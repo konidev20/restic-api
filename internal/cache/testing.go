@@ -3,8 +3,8 @@ package cache
 import (
 	"testing"
 
-	"github.com/konidev20/restic-api/restic"
-	"github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/restic"
 )
 
 // TestNewCache returns a cache in a temporary directory which is removed when

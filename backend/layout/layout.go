@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/internal/fs"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/internal/fs"
+	"github.com/konidev20/rapi/restic"
 )
 
 // Layout computes paths for file name storage.

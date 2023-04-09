@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/konidev20/restic-api/internal/filter"
+	"github.com/konidev20/rapi/internal/filter"
 )
 
 var matchTests = []struct {

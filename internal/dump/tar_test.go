@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/fs"
+	"github.com/konidev20/rapi/internal/fs"
 )
 
 func TestWriteTar(t *testing.T) {

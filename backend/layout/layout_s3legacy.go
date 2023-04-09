@@ -1,6 +1,6 @@
 package layout
 
-import "github.com/konidev20/restic-api/restic"
+import "github.com/konidev20/rapi/restic"
 
 // S3LegacyLayout implements the old layout used for s3 cloud storage backends, as
 // described in the Design document.

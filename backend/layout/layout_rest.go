@@ -1,6 +1,6 @@
 package layout
 
-import "github.com/konidev20/restic-api/restic"
+import "github.com/konidev20/rapi/restic"
 
 // RESTLayout implements the default layout for the REST protocol.
 type RESTLayout struct {

@@ -5,10 +5,10 @@ import (
 	"io"
 	"path"
 
-	"github.com/konidev20/restic-api/internal/bloblru"
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/restic"
-	"github.com/konidev20/restic-api/walker"
+	"github.com/konidev20/rapi/internal/bloblru"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/walker"
 )
 
 // A Dumper writes trees and files from a repository to a Writer

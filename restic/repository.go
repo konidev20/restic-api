@@ -3,9 +3,9 @@ package restic
 import (
 	"context"
 
-	"github.com/konidev20/restic-api/crypto"
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/internal/ui/progress"
+	"github.com/konidev20/rapi/crypto"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/internal/ui/progress"
 	"golang.org/x/sync/errgroup"
 )
 

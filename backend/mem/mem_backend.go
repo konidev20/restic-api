@@ -9,11 +9,11 @@ import (
 	"sync"
 
 	"github.com/cespare/xxhash/v2"
-	"github.com/konidev20/restic-api/backend"
-	"github.com/konidev20/restic-api/backend/sema"
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/backend"
+	"github.com/konidev20/rapi/backend/sema"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/restic"
 
 	"github.com/cenkalti/backoff/v4"
 )

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/errors"
 )
 
 // Duration is similar to time.Duration, except it only supports larger ranges

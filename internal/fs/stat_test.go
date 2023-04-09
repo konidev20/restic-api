@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	restictest "github.com/konidev20/restic-api/internal/test"
+	restictest "github.com/konidev20/rapi/internal/test"
 )
 
 func TestExtendedStat(t *testing.T) {

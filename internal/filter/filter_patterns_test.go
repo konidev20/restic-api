@@ -3,8 +3,8 @@ package filter_test
 import (
 	"testing"
 
-	"github.com/konidev20/restic-api/internal/filter"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/internal/filter"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func TestValidPatterns(t *testing.T) {

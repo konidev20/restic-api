@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/archiver"
-	"github.com/konidev20/restic-api/restic"
-	"github.com/konidev20/restic-api/internal/ui/progress"
+	"github.com/konidev20/rapi/internal/archiver"
+	"github.com/konidev20/rapi/internal/ui/progress"
+	"github.com/konidev20/rapi/restic"
 )
 
 // A ProgressPrinter can print various progress messages.

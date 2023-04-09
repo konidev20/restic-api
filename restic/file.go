@@ -3,7 +3,7 @@ package restic
 import (
 	"fmt"
 
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/errors"
 )
 
 // FileType is the type of a file in the backend.

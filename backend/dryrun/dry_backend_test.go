@@ -8,10 +8,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/restic"
 
-	"github.com/konidev20/restic-api/backend/dryrun"
-	"github.com/konidev20/restic-api/backend/mem"
+	"github.com/konidev20/rapi/backend/dryrun"
+	"github.com/konidev20/rapi/backend/mem"
 )
 
 // make sure that Backend implements backend.Backend

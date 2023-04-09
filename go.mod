@@ -1,4 +1,4 @@
-module github.com/konidev20/restic-api
+module github.com/konidev20/rapi
 
 go 1.19
 

@@ -3,7 +3,7 @@ package layout
 import (
 	"encoding/hex"
 
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/restic"
 )
 
 // DefaultLayout implements the default layout for local and sftp backends, as

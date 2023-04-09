@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/konidev20/restic-api/backend/local"
-	"github.com/konidev20/restic-api/backend/test"
-	"github.com/konidev20/restic-api/restic"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/backend/local"
+	"github.com/konidev20/rapi/backend/test"
+	rtest "github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/restic"
 )
 
 func newTestSuite(t testing.TB) *test.Suite {

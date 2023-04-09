@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/internal/test"
 )
 
 func TestRedactHeader(t *testing.T) {

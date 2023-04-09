@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/konidev20/restic-api/internal/fs"
+	"github.com/konidev20/rapi/internal/fs"
 )
 
 var opts struct {

@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/rapi/internal/debug"
 )
 
 // StdioConn implements a net.Conn via stdin/stdout.

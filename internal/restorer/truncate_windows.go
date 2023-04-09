@@ -3,7 +3,7 @@ package restorer
 import (
 	"os"
 
-	"github.com/konidev20/restic-api/internal/debug"
+	"github.com/konidev20/rapi/internal/debug"
 	"golang.org/x/sys/windows"
 )
 

@@ -5,7 +5,7 @@ import (
 	"hash"
 	"io"
 
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/errors"
 )
 
 // RewindReader allows resetting the Reader to the beginning of the data.

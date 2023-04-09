@@ -12,7 +12,7 @@ import (
 	"unsafe"
 
 	ole "github.com/go-ole/go-ole"
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/errors"
 	"golang.org/x/sys/windows"
 )
 

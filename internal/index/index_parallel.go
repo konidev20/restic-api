@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/restic"
 )
 
 // ForAllIndexes loads all index files in parallel and calls the given callback.

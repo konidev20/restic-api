@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/restic"
 )
 
 // SelectByNameFunc returns true for all items that should be included (files and

@@ -3,8 +3,8 @@ package bloblru
 import (
 	"sync"
 
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/restic"
 
 	"github.com/hashicorp/golang-lru/v2/simplelru"
 )

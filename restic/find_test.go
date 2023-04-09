@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/repository"
-	"github.com/konidev20/restic-api/restic"
-	"github.com/konidev20/restic-api/internal/test"
-	"github.com/konidev20/restic-api/internal/ui/progress"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/internal/ui/progress"
+	"github.com/konidev20/rapi/repository"
+	"github.com/konidev20/rapi/restic"
 )
 
 func loadIDSet(t testing.TB, filename string) restic.BlobSet {

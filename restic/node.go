@@ -11,12 +11,12 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/errors"
+	"github.com/konidev20/rapi/internal/errors"
 
 	"bytes"
 
-	"github.com/konidev20/restic-api/internal/debug"
-	"github.com/konidev20/restic-api/internal/fs"
+	"github.com/konidev20/rapi/internal/debug"
+	"github.com/konidev20/rapi/internal/fs"
 )
 
 // ExtendedAttribute is a tuple storing the xattr name and value.

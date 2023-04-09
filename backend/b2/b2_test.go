@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/restic-api/backend"
-	"github.com/konidev20/restic-api/backend/b2"
-	"github.com/konidev20/restic-api/backend/test"
-	"github.com/konidev20/restic-api/internal/options"
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/backend"
+	"github.com/konidev20/rapi/backend/b2"
+	"github.com/konidev20/rapi/backend/test"
+	"github.com/konidev20/rapi/internal/options"
+	"github.com/konidev20/rapi/restic"
 
-	rtest "github.com/konidev20/restic-api/internal/test"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func newB2TestSuite(t testing.TB) *test.Suite {

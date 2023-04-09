@@ -4,8 +4,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/internal/options"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/internal/options"
 )
 
 // Config contains all configuration necessary to connect to a Google Cloud Storage

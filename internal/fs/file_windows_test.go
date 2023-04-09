@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/konidev20/restic-api/internal/fs"
-	rtest "github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/internal/fs"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func TestTempFile(t *testing.T) {

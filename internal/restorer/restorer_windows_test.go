@@ -9,7 +9,7 @@ import (
 	"testing"
 	"unsafe"
 
-	rtest "github.com/konidev20/restic-api/internal/test"
+	rtest "github.com/konidev20/rapi/internal/test"
 	"golang.org/x/sys/windows"
 )
 

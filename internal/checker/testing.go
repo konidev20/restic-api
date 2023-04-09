@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/restic"
 )
 
 // TestCheckRepo runs the checker on repo.

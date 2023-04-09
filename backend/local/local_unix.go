@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"syscall"
 
-	"github.com/konidev20/restic-api/internal/fs"
+	"github.com/konidev20/rapi/internal/fs"
 )
 
 // fsyncDir flushes changes to the directory dir.

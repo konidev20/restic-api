@@ -12,13 +12,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/restic-api/internal/archiver"
-	"github.com/konidev20/restic-api/internal/checker"
-	"github.com/konidev20/restic-api/internal/errors"
-	"github.com/konidev20/restic-api/internal/hashing"
-	"github.com/konidev20/restic-api/repository"
-	"github.com/konidev20/restic-api/restic"
-	"github.com/konidev20/restic-api/internal/test"
+	"github.com/konidev20/rapi/internal/archiver"
+	"github.com/konidev20/rapi/internal/checker"
+	"github.com/konidev20/rapi/internal/errors"
+	"github.com/konidev20/rapi/internal/hashing"
+	"github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/repository"
+	"github.com/konidev20/rapi/restic"
 	"golang.org/x/sync/errgroup"
 )
 

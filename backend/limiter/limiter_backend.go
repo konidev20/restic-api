@@ -4,7 +4,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/konidev20/restic-api/restic"
+	"github.com/konidev20/rapi/restic"
 )
 
 // LimitBackend wraps a Backend and applies rate limiting to Load() and Save()
