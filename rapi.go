@@ -107,14 +107,14 @@ func Println(args ...interface{}) {
 
 // Verbosef calls Printf to write the message when the verbose flag is set.
 func Verbosef(format string, args ...interface{}) {
-	if DefaultOptions.verbosity >= 1 {
+	if DefaultOptions.Verbosity >= 1 {
 		Printf(format, args...)
 	}
 }
 
 // Verboseff calls Printf to write the message when the verbosity is >= 2
 func Verboseff(format string, args ...interface{}) {
-	if DefaultOptions.verbosity >= 2 {
+	if DefaultOptions.Verbosity >= 2 {
 		Printf(format, args...)
 	}
 }
