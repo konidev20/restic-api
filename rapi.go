@@ -58,9 +58,9 @@ type RepositoryOptions struct {
 	backend.TransportOptions
 	limiter.Limits
 
-	password string
-	stdout   io.Writer
-	stderr   io.Writer
+	Password string
+	Stdout   io.Writer
+	Stderr   io.Writer
 
 	backendTestHook, backendInnerTestHook backendWrapper
 
@@ -69,61 +69,61 @@ type RepositoryOptions struct {
 	//  1 is the default: print essential messages
 	//  2 means: print more messages, report minor things, this is used when --verbose is specified
 	//  3 means: print very detailed debug messages, this is used when --verbose=2 is specified
-	verbosity uint
+	Verbosity uint
 
 	Options []string
 
-	extended options.Options
+	Extended options.Options
 }
 
-var globalOptions = RepositoryOptions{
-	stdout: os.Stdout,
-	stderr: os.Stderr,
+var DefaultOptions = RepositoryOptions{
+	Stdout: os.Stdout,
+	Stderr: os.Stderr,
 }
 
-// Printf writes the message to the configured stdout stream.
+// Printf writes the message to the configured Stdout stream.
 func Printf(format string, args ...interface{}) {
-	_, err := fmt.Fprintf(globalOptions.stdout, format, args...)
+	_, err := fmt.Fprintf(DefaultOptions.Stdout, format, args...)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "unable to write to stdout: %v\n", err)
+		fmt.Fprintf(os.Stderr, "unable to write to Stdout: %v\n", err)
 	}
 }
 
-// Print writes the message to the configured stdout stream.
+// Print writes the message to the configured Stdout stream.
 func Print(args ...interface{}) {
-	_, err := fmt.Fprint(globalOptions.stdout, args...)
+	_, err := fmt.Fprint(DefaultOptions.Stdout, args...)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "unable to write to stdout: %v\n", err)
+		fmt.Fprintf(os.Stderr, "unable to write to Stdout: %v\n", err)
 	}
 }
 
-// Println writes the message to the configured stdout stream.
+// Println writes the message to the configured Stdout stream.
 func Println(args ...interface{}) {
-	_, err := fmt.Fprintln(globalOptions.stdout, args...)
+	_, err := fmt.Fprintln(DefaultOptions.Stdout, args...)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "unable to write to stdout: %v\n", err)
+		fmt.Fprintf(os.Stderr, "unable to write to Stdout: %v\n", err)
 	}
 }
 
 // Verbosef calls Printf to write the message when the verbose flag is set.
 func Verbosef(format string, args ...interface{}) {
-	if globalOptions.verbosity >= 1 {
+	if DefaultOptions.verbosity >= 1 {
 		Printf(format, args...)
 	}
 }
 
 // Verboseff calls Printf to write the message when the verbosity is >= 2
 func Verboseff(format string, args ...interface{}) {
-	if globalOptions.verbosity >= 2 {
+	if DefaultOptions.verbosity >= 2 {
 		Printf(format, args...)
 	}
 }
 
-// Warnf writes the message to the configured stderr stream.
+// Warnf writes the message to the configured Stderr stream.
 func Warnf(format string, args ...interface{}) {
-	_, err := fmt.Fprintf(globalOptions.stderr, format, args...)
+	_, err := fmt.Fprintf(DefaultOptions.Stderr, format, args...)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "unable to write to stderr: %v\n", err)
+		fmt.Fprintf(os.Stderr, "unable to write to Stderr: %v\n", err)
 	}
 }
 
@@ -161,7 +161,7 @@ func OpenRepository(ctx context.Context, opts RepositoryOptions) (*repository.Re
 		return nil, err
 	}
 
-	be, err := open(ctx, repo, opts, opts.extended)
+	be, err := open(ctx, repo, opts, opts.Extended)
 	if err != nil {
 		return nil, err
 	}
@@ -190,9 +190,9 @@ func OpenRepository(ctx context.Context, opts RepositoryOptions) (*repository.Re
 		return nil, err
 	}
 
-	err = s.SearchKey(ctx, opts.password, maxKeys, opts.KeyHint)
+	err = s.SearchKey(ctx, opts.Password, maxKeys, opts.KeyHint)
 	if err != nil {
-		opts.password = ""
+		opts.Password = ""
 		Warnf("unable to search repository key: %v", err.Error())
 	}
 
@@ -404,7 +404,7 @@ func open(ctx context.Context, s string, gopts RepositoryOptions, opts options.O
 		return nil, err
 	}
 
-	rt, err := backend.Transport(globalOptions.TransportOptions)
+	rt, err := backend.Transport(DefaultOptions.TransportOptions)
 	if err != nil {
 		return nil, err
 	}
