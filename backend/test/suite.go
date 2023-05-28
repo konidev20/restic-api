@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/internal/test"
 )
 
 // Suite implements a test suite for restic backends.

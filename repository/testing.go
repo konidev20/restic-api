@@ -10,8 +10,8 @@ import (
 	"github.com/konidev20/rapi/backend/mem"
 	"github.com/konidev20/rapi/backend/retry"
 	"github.com/konidev20/rapi/crypto"
-	"github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/internal/test"
 
 	"github.com/restic/chunker"
 )
@@ -34,7 +34,7 @@ func TestUseLowSecurityKDFParameters(t logger) {
 }
 
 // TestBackend returns a fully configured in-memory backend.
-func TestBackend(t testing.TB) restic.Backend {
+func TestBackend(_ testing.TB) restic.Backend {
 	return mem.New()
 }
 

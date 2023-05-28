@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func TestLayout(t *testing.T) {

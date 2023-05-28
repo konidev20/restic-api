@@ -10,8 +10,8 @@ import (
 	"github.com/cenkalti/backoff/v4"
 	"github.com/konidev20/rapi/backend/mock"
 	"github.com/konidev20/rapi/internal/errors"
-	"github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/internal/test"
 )
 
 func TestBackendSaveRetry(t *testing.T) {

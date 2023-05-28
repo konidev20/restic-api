@@ -10,8 +10,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/konidev20/rapi/internal/fs"
-	restictest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/repository"
+	restictest "github.com/konidev20/rapi/internal/test"
 )
 
 // MockT passes through all logging functions from T, but catches Fail(),

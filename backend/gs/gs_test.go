@@ -11,8 +11,8 @@ import (
 	"github.com/konidev20/rapi/backend/gs"
 	"github.com/konidev20/rapi/backend/test"
 	"github.com/konidev20/rapi/internal/errors"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func newGSTestSuite(t testing.TB) *test.Suite {
@@ -42,7 +42,7 @@ func newGSTestSuite(t testing.TB) *test.Suite {
 		Create: func(config interface{}) (restic.Backend, error) {
 			cfg := config.(gs.Config)
 
-			be, err := gs.Create(cfg, tr)
+			be, err := gs.Create(context.Background(), cfg, tr)
 			if err != nil {
 				return nil, err
 			}

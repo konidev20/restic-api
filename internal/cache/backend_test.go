@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/pkg/errors"
 	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/backend/mem"
-	"github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
-	"github.com/pkg/errors"
+	"github.com/konidev20/rapi/internal/test"
 )
 
 func loadAndCompare(t testing.TB, be restic.Backend, h restic.Handle, data []byte) {
@@ -118,7 +118,7 @@ type loadErrorBackend struct {
 	loadError error
 }
 
-func (be loadErrorBackend) Load(ctx context.Context, h restic.Handle, length int, offset int64, fn func(rd io.Reader) error) error {
+func (be loadErrorBackend) Load(_ context.Context, _ restic.Handle, _ int, _ int64, _ func(rd io.Reader) error) error {
 	time.Sleep(10 * time.Millisecond)
 	return be.loadError
 }

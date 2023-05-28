@@ -2,10 +2,9 @@ package restic
 
 import (
 	"encoding/json"
+	"fmt"
 	"sort"
 	"strings"
-
-	"github.com/konidev20/rapi/internal/errors"
 )
 
 type SnapshotGroupByOptions struct {
@@ -26,7 +25,7 @@ func splitSnapshotGroupBy(s string) (SnapshotGroupByOptions, error) {
 			l.Tag = true
 		case "":
 		default:
-			return SnapshotGroupByOptions{}, errors.Fatal("unknown grouping option: '" + option + "'")
+			return SnapshotGroupByOptions{}, fmt.Errorf("unknown grouping option: %q", option)
 		}
 	}
 	return l, nil
@@ -68,7 +67,7 @@ type SnapshotGroupKey struct {
 }
 
 // GroupSnapshots takes a list of snapshots and a grouping criteria and creates
-// a group list of snapshots.
+// a grouped list of snapshots.
 func GroupSnapshots(snapshots Snapshots, groupBy SnapshotGroupByOptions) (map[string]Snapshots, bool, error) {
 	// group by hostname and dirs
 	snapshotGroups := make(map[string]Snapshots)

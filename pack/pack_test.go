@@ -12,9 +12,9 @@ import (
 	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/backend/mem"
 	"github.com/konidev20/rapi/crypto"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/pack"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 var testLens = []int{23, 31650, 25860, 10928, 13769, 19862, 5211, 127, 13690, 30231}

@@ -9,9 +9,9 @@ import (
 	"time"
 
 	"github.com/konidev20/rapi/backend/mem"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/repository"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func TestLock(t *testing.T) {

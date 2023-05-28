@@ -8,8 +8,8 @@ import (
 
 	"github.com/konidev20/rapi/backend/local"
 	"github.com/konidev20/rapi/backend/test"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func newTestSuite(t testing.TB) *test.Suite {

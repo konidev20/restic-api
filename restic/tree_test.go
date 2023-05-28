@@ -10,9 +10,9 @@ import (
 	"testing"
 
 	"github.com/konidev20/rapi/internal/archiver"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/repository"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 	"golang.org/x/sync/errgroup"
 )
 

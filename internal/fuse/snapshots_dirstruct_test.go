@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/internal/test"
 )
 
 func TestPathsFromSn(t *testing.T) {

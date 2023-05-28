@@ -11,8 +11,8 @@ import (
 	"github.com/konidev20/rapi/backend/sftp"
 	"github.com/konidev20/rapi/backend/test"
 	"github.com/konidev20/rapi/internal/errors"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func findSFTPServerBinary() string {

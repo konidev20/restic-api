@@ -13,10 +13,10 @@ import (
 	"time"
 
 	"github.com/konidev20/rapi/internal/errors"
-	"github.com/konidev20/rapi/internal/test"
-	"github.com/konidev20/rapi/internal/ui/progress"
 	"github.com/konidev20/rapi/repository"
 	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/internal/ui/progress"
 )
 
 func loadIDSet(t testing.TB, filename string) restic.BlobSet {
@@ -166,7 +166,7 @@ func (r ForbiddenRepo) LoadBlob(context.Context, restic.BlobType, restic.ID, []b
 	return nil, errors.New("should not be called")
 }
 
-func (r ForbiddenRepo) LookupBlobSize(id restic.ID, tpe restic.BlobType) (uint, bool) {
+func (r ForbiddenRepo) LookupBlobSize(_ restic.ID, _ restic.BlobType) (uint, bool) {
 	return 0, false
 }
 

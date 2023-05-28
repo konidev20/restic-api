@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/minio/sha256-simd"
 	"github.com/konidev20/rapi/internal/errors"
 	"github.com/konidev20/rapi/restic"
-	"github.com/minio/sha256-simd"
 
 	"github.com/konidev20/rapi/internal/test"
 
@@ -124,17 +124,7 @@ func (s *Suite) TestLoad(t *testing.T) {
 	b := s.open(t)
 	defer s.close(t, b)
 
-	noop := func(rd io.Reader) error {
-		return nil
-	}
-
-	err := b.Load(context.TODO(), restic.Handle{}, 0, 0, noop)
-	if err == nil {
-		t.Fatalf("Load() did not return an error for invalid handle")
-	}
-	test.Assert(t, !b.IsNotExist(err), "IsNotExist() should not accept an invalid handle error: %v", err)
-
-	err = testLoad(b, restic.Handle{Type: restic.PackFile, Name: "foobar"}, 0, 0)
+	err := testLoad(b, restic.Handle{Type: restic.PackFile, Name: "foobar"})
 	if err == nil {
 		t.Fatalf("Load() did not return an error for non-existing blob")
 	}
@@ -152,11 +142,6 @@ func (s *Suite) TestLoad(t *testing.T) {
 	}
 
 	t.Logf("saved %d bytes as %v", length, handle)
-
-	err = b.Load(context.TODO(), handle, 100, -1, noop)
-	if err == nil {
-		t.Fatalf("Load() returned no error for negative offset!")
-	}
 
 	err = b.Load(context.TODO(), handle, 0, 0, func(rd io.Reader) error {
 		_, err := io.Copy(io.Discard, rd)
@@ -687,7 +672,7 @@ func store(t testing.TB, b restic.Backend, tpe restic.FileType, data []byte) res
 }
 
 // testLoad loads a blob (but discards its contents).
-func testLoad(b restic.Backend, h restic.Handle, length int, offset int64) error {
+func testLoad(b restic.Backend, h restic.Handle) error {
 	return b.Load(context.TODO(), h, 0, 0, func(rd io.Reader) (ierr error) {
 		_, ierr = io.Copy(io.Discard, rd)
 		return ierr
@@ -788,7 +773,7 @@ func (s *Suite) TestBackend(t *testing.T) {
 			test.Assert(t, b.IsNotExist(err), "IsNotExist() did not recognize Stat() error: %v", err)
 
 			// try to read not existing blob
-			err = testLoad(b, h, 0, 0)
+			err = testLoad(b, h)
 			test.Assert(t, err != nil, "blob could be read before creation")
 			test.Assert(t, b.IsNotExist(err), "IsNotExist() did not recognize Load() error: %v", err)
 

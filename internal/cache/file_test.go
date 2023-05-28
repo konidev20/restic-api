@@ -11,8 +11,9 @@ import (
 	"time"
 
 	"github.com/konidev20/rapi/internal/errors"
-	"github.com/konidev20/rapi/internal/test"
+	"github.com/konidev20/rapi/internal/fs"
 	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/internal/test"
 
 	"golang.org/x/sync/errgroup"
 )
@@ -265,4 +266,20 @@ func TestFileSaveConcurrent(t *testing.T) {
 	test.OK(t, g.Wait())
 	saved := load(t, c, h)
 	test.Equals(t, data, saved)
+}
+
+func TestFileSaveAfterDamage(t *testing.T) {
+	c := TestNewCache(t)
+	test.OK(t, fs.RemoveAll(c.path))
+
+	// save a few bytes of data in the cache
+	data := test.Random(123456789, 42)
+	id := restic.Hash(data)
+	h := restic.Handle{
+		Type: restic.PackFile,
+		Name: id.String(),
+	}
+	if err := c.Save(h, bytes.NewReader(data)); err == nil {
+		t.Fatal("Missing error when saving to deleted cache directory")
+	}
 }

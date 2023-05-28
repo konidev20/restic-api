@@ -19,8 +19,8 @@ import (
 	"github.com/konidev20/rapi/backend/s3"
 	"github.com/konidev20/rapi/backend/test"
 	"github.com/konidev20/rapi/internal/options"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func mkdir(t testing.TB, dir string) {

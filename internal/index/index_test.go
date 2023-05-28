@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/konidev20/rapi/internal/index"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func TestIndexSerialize(t *testing.T) {

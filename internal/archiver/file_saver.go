@@ -6,11 +6,11 @@ import (
 	"os"
 	"sync"
 
+	"github.com/restic/chunker"
 	"github.com/konidev20/rapi/internal/debug"
 	"github.com/konidev20/rapi/internal/errors"
 	"github.com/konidev20/rapi/internal/fs"
 	"github.com/konidev20/rapi/restic"
-	"github.com/restic/chunker"
 	"golang.org/x/sync/errgroup"
 )
 

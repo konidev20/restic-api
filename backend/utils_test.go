@@ -12,8 +12,8 @@ import (
 	"github.com/konidev20/rapi/backend/mem"
 	"github.com/konidev20/rapi/backend/mock"
 	"github.com/konidev20/rapi/internal/errors"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 const KiB = 1 << 10
@@ -154,7 +154,7 @@ type mockReader struct {
 	closed bool
 }
 
-func (rd *mockReader) Read(p []byte) (n int, err error) {
+func (rd *mockReader) Read(_ []byte) (n int, err error) {
 	return 0, nil
 }
 func (rd *mockReader) Close() error {

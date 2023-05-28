@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/konidev20/rapi/crypto"
-	"github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/internal/test"
 )
 
 func randomID(rd io.Reader) restic.ID {

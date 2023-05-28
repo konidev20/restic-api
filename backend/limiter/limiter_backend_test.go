@@ -9,8 +9,8 @@ import (
 	"testing"
 
 	"github.com/konidev20/rapi/backend/mock"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func randomBytes(t *testing.T, size int) []byte {

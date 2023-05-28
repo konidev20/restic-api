@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/konidev20/rapi/crypto"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func TestParseHeaderEntry(t *testing.T) {

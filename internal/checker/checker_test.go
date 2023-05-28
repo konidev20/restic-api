@@ -16,9 +16,9 @@ import (
 	"github.com/konidev20/rapi/internal/checker"
 	"github.com/konidev20/rapi/internal/errors"
 	"github.com/konidev20/rapi/internal/hashing"
-	"github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/repository"
 	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/internal/test"
 	"golang.org/x/sync/errgroup"
 )
 
@@ -331,10 +331,6 @@ func (erd errorReadCloser) Read(p []byte) (int, error) {
 
 // induceError flips a bit in the slice.
 func induceError(data []byte) {
-	if rand.Float32() < 0.2 {
-		return
-	}
-
 	pos := rand.Intn(len(data))
 	data[pos] ^= 1
 }

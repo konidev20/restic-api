@@ -12,8 +12,8 @@ import (
 	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/backend/rest"
 	"github.com/konidev20/rapi/backend/test"
-	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	rtest "github.com/konidev20/rapi/internal/test"
 )
 
 func runRESTServer(ctx context.Context, t testing.TB, dir string) (*url.URL, func()) {
@@ -67,7 +67,7 @@ func runRESTServer(ctx context.Context, t testing.TB, dir string) (*url.URL, fun
 	return url, cleanup
 }
 
-func newTestSuite(ctx context.Context, t testing.TB, url *url.URL, minimalData bool) *test.Suite {
+func newTestSuite(_ context.Context, t testing.TB, url *url.URL, minimalData bool) *test.Suite {
 	tr, err := backend.Transport(backend.TransportOptions{})
 	if err != nil {
 		t.Fatalf("cannot create transport for tests: %v", err)

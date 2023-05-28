@@ -7,12 +7,12 @@ import (
 	"testing"
 
 	"github.com/konidev20/rapi/internal/errors"
-	"github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/internal/test"
 	"golang.org/x/sync/errgroup"
 )
 
-func treeSaveHelper(ctx context.Context, t restic.BlobType, buf *Buffer, cb func(res SaveBlobResponse)) {
+func treeSaveHelper(_ context.Context, _ restic.BlobType, buf *Buffer, cb func(res SaveBlobResponse)) {
 	cb(SaveBlobResponse{
 		id:         restic.NewRandomID(),
 		known:      false,

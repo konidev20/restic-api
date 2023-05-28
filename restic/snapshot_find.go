@@ -46,6 +46,7 @@ func (f *SnapshotFilter) findLatest(ctx context.Context, be Lister, loader Loade
 		}
 		absTargets = append(absTargets, filepath.Clean(target))
 	}
+	f.Paths = absTargets
 
 	var latest *Snapshot
 
@@ -142,10 +143,10 @@ func (f *SnapshotFilter) FindAll(ctx context.Context, be Lister, loader LoaderUn
 				if err == nil {
 					if ids.Has(*sn.ID()) {
 						continue
-					} else {
-						ids.Insert(*sn.ID())
-						s = sn.ID().String()
 					}
+
+					ids.Insert(*sn.ID())
+					s = sn.ID().String()
 				}
 			}
 			err = fn(s, sn, err)

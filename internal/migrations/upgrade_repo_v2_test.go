@@ -8,9 +8,9 @@ import (
 	"testing"
 
 	"github.com/konidev20/rapi/internal/errors"
-	"github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/repository"
 	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/internal/test"
 )
 
 func TestUpgradeRepoV2(t *testing.T) {
