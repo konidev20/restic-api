@@ -15,6 +15,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/backend/layout"
+	"github.com/konidev20/rapi/backend/location"
 	"github.com/konidev20/rapi/internal/debug"
 	"github.com/konidev20/rapi/restic"
 
@@ -46,6 +47,10 @@ type Backend struct {
 
 // Ensure that *Backend implements restic.Backend.
 var _ restic.Backend = &Backend{}
+
+func NewFactory() location.Factory {
+	return location.NewHTTPBackendFactory("gs", ParseConfig, location.NoPassword, Create, Open)
+}
 
 func getStorageClient(rt http.RoundTripper) (*storage.Client, error) {
 	// create a new HTTP client
@@ -117,7 +122,7 @@ func open(cfg Config, rt http.RoundTripper) (*Backend, error) {
 }
 
 // Open opens the gs backend at the specified bucket.
-func Open(cfg Config, rt http.RoundTripper) (restic.Backend, error) {
+func Open(_ context.Context, cfg Config, rt http.RoundTripper) (restic.Backend, error) {
 	return open(cfg, rt)
 }
 

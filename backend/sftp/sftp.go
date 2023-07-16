@@ -15,6 +15,8 @@ import (
 
 	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/backend/layout"
+	"github.com/konidev20/rapi/backend/limiter"
+	"github.com/konidev20/rapi/backend/location"
 	"github.com/konidev20/rapi/internal/debug"
 	"github.com/konidev20/rapi/internal/errors"
 	"github.com/konidev20/rapi/restic"
@@ -40,6 +42,10 @@ type SFTP struct {
 }
 
 var _ restic.Backend = &SFTP{}
+
+func NewFactory() location.Factory {
+	return location.NewLimitedBackendFactory("sftp", ParseConfig, location.NoPassword, limiter.WrapBackendConstructor(Create), limiter.WrapBackendConstructor(Open))
+}
 
 const defaultLayout = "default"
 

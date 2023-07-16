@@ -15,6 +15,7 @@ import (
 
 	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/backend/layout"
+	"github.com/konidev20/rapi/backend/location"
 	"github.com/konidev20/rapi/internal/debug"
 	"github.com/konidev20/rapi/internal/errors"
 	"github.com/konidev20/rapi/restic"
@@ -33,6 +34,10 @@ type beSwift struct {
 
 // ensure statically that *beSwift implements restic.Backend.
 var _ restic.Backend = &beSwift{}
+
+func NewFactory() location.Factory {
+	return location.NewHTTPBackendFactory("swift", ParseConfig, location.NoPassword, Open, Open)
+}
 
 // Open opens the swift backend at a container in region. The container is
 // created if it does not exist yet.

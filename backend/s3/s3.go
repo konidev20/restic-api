@@ -13,6 +13,7 @@ import (
 
 	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/backend/layout"
+	"github.com/konidev20/rapi/backend/location"
 	"github.com/konidev20/rapi/internal/debug"
 	"github.com/konidev20/rapi/internal/errors"
 	"github.com/konidev20/rapi/restic"
@@ -31,10 +32,20 @@ type Backend struct {
 // make sure that *Backend implements backend.Backend
 var _ restic.Backend = &Backend{}
 
+func NewFactory() location.Factory {
+	return location.NewHTTPBackendFactory("s3", ParseConfig, location.NoPassword, Create, Open)
+}
+
 const defaultLayout = "default"
 
 func open(ctx context.Context, cfg Config, rt http.RoundTripper) (*Backend, error) {
 	debug.Log("open, config %#v", cfg)
+
+	if cfg.KeyID == "" && cfg.Secret.String() != "" {
+		return nil, errors.Fatalf("unable to open S3 backend: Key ID ($AWS_ACCESS_KEY_ID) is empty")
+	} else if cfg.KeyID != "" && cfg.Secret.String() == "" {
+		return nil, errors.Fatalf("unable to open S3 backend: Secret ($AWS_SECRET_ACCESS_KEY) is empty")
+	}
 
 	if cfg.MaxRetries > 0 {
 		minio.MaxRetry = int(cfg.MaxRetries)
