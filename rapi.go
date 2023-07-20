@@ -10,11 +10,20 @@ import (
 	"time"
 
 	"github.com/konidev20/rapi/backend"
+	"github.com/konidev20/rapi/backend/azure"
+	"github.com/konidev20/rapi/backend/b2"
+	"github.com/konidev20/rapi/backend/gs"
 	"github.com/konidev20/rapi/backend/limiter"
+	"github.com/konidev20/rapi/backend/local"
 	"github.com/konidev20/rapi/backend/location"
 	"github.com/konidev20/rapi/backend/logger"
+	"github.com/konidev20/rapi/backend/rclone"
+	"github.com/konidev20/rapi/backend/rest"
 	"github.com/konidev20/rapi/backend/retry"
+	"github.com/konidev20/rapi/backend/s3"
 	"github.com/konidev20/rapi/backend/sema"
+	"github.com/konidev20/rapi/backend/sftp"
+	"github.com/konidev20/rapi/backend/swift"
 	"github.com/konidev20/rapi/internal/cache"
 	"github.com/konidev20/rapi/internal/debug"
 	"github.com/konidev20/rapi/internal/fs"
@@ -73,6 +82,20 @@ type RepositoryOptions struct {
 var DefaultOptions = RepositoryOptions{
 	Stdout: os.Stdout,
 	Stderr: os.Stderr,
+}
+
+func init() {
+	backends := location.NewRegistry()
+	backends.Register(azure.NewFactory())
+	backends.Register(b2.NewFactory())
+	backends.Register(gs.NewFactory())
+	backends.Register(local.NewFactory())
+	backends.Register(rclone.NewFactory())
+	backends.Register(rest.NewFactory())
+	backends.Register(s3.NewFactory())
+	backends.Register(sftp.NewFactory())
+	backends.Register(swift.NewFactory())
+	DefaultOptions.backends = backends
 }
 
 // Printf writes the message to the configured Stdout stream.
