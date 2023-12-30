@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/konidev20/rapi/internal/test"
-	"github.com/konidev20/rapi/internal/ui/progress"
+	"github.com/konidev20/rapi/ui/progress"
 )
 
 func TestUpdater(t *testing.T) {

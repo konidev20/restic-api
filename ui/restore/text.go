@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/konidev20/rapi/internal/ui"
+	"github.com/konidev20/rapi/ui"
 )
 
 type textPrinter struct {

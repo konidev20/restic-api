@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/konidev20/rapi/internal/ui/termstatus"
+	"github.com/konidev20/rapi/ui/termstatus"
 )
 
 // StdioWrapper provides stdout and stderr integration with termstatus.

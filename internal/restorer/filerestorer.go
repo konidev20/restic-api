@@ -12,7 +12,7 @@ import (
 	"github.com/konidev20/rapi/internal/errors"
 	"github.com/konidev20/rapi/repository"
 	"github.com/konidev20/rapi/restic"
-	"github.com/konidev20/rapi/internal/ui/restore"
+	"github.com/konidev20/rapi/ui/restore"
 )
 
 // TODO if a blob is corrupt, there may be good blob copies in other packs

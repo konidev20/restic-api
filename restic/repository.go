@@ -6,7 +6,7 @@ import (
 	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/crypto"
 	"github.com/konidev20/rapi/internal/errors"
-	"github.com/konidev20/rapi/internal/ui/progress"
+	"github.com/konidev20/rapi/ui/progress"
 	"golang.org/x/sync/errgroup"
 )
 

@@ -6,8 +6,8 @@ import (
 
 	"github.com/konidev20/rapi/internal/archiver"
 	"github.com/konidev20/rapi/restic"
-	"github.com/konidev20/rapi/internal/ui"
-	"github.com/konidev20/rapi/internal/ui/termstatus"
+	"github.com/konidev20/rapi/ui"
+	"github.com/konidev20/rapi/ui/termstatus"
 )
 
 // JSONProgress reports progress for the `backup` command in JSON.

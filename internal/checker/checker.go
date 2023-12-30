@@ -10,7 +10,6 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/minio/sha256-simd"
 	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/backend/s3"
 	"github.com/konidev20/rapi/internal/cache"
@@ -21,7 +20,8 @@ import (
 	"github.com/konidev20/rapi/pack"
 	"github.com/konidev20/rapi/repository"
 	"github.com/konidev20/rapi/restic"
-	"github.com/konidev20/rapi/internal/ui/progress"
+	"github.com/konidev20/rapi/ui/progress"
+	"github.com/minio/sha256-simd"
 	"golang.org/x/sync/errgroup"
 )
 

@@ -13,17 +13,17 @@ import (
 
 	"github.com/cenkalti/backoff/v4"
 	"github.com/klauspost/compress/zstd"
-	"github.com/restic/chunker"
 	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/backend/dryrun"
-	"github.com/konidev20/rapi/internal/cache"
 	"github.com/konidev20/rapi/crypto"
+	"github.com/konidev20/rapi/internal/cache"
 	"github.com/konidev20/rapi/internal/debug"
 	"github.com/konidev20/rapi/internal/errors"
 	"github.com/konidev20/rapi/internal/index"
 	"github.com/konidev20/rapi/pack"
 	"github.com/konidev20/rapi/restic"
-	"github.com/konidev20/rapi/internal/ui/progress"
+	"github.com/konidev20/rapi/ui/progress"
+	"github.com/restic/chunker"
 
 	"golang.org/x/sync/errgroup"
 )

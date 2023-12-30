@@ -11,10 +11,10 @@ import (
 	"testing"
 	"time"
 
+	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/repository"
 	"github.com/konidev20/rapi/restic"
-	rtest "github.com/konidev20/rapi/internal/test"
-	restoreui "github.com/konidev20/rapi/internal/ui/restore"
+	restoreui "github.com/konidev20/rapi/ui/restore"
 )
 
 func TestRestorerRestoreEmptyHardlinkedFileds(t *testing.T) {

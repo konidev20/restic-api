@@ -10,7 +10,7 @@ import (
 	"github.com/konidev20/rapi/internal/errors"
 	"github.com/konidev20/rapi/internal/fs"
 	"github.com/konidev20/rapi/restic"
-	restoreui "github.com/konidev20/rapi/internal/ui/restore"
+	restoreui "github.com/konidev20/rapi/ui/restore"
 
 	"golang.org/x/sync/errgroup"
 )

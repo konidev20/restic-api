@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/konidev20/rapi/internal/ui/progress"
+	"github.com/konidev20/rapi/ui/progress"
 )
 
 type Progress struct {

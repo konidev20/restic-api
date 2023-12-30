@@ -7,7 +7,7 @@ import (
 	"sync"
 
 	"github.com/konidev20/rapi/internal/debug"
-	"github.com/konidev20/rapi/internal/ui/progress"
+	"github.com/konidev20/rapi/ui/progress"
 	"golang.org/x/sync/errgroup"
 )
 
