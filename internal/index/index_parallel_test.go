@@ -7,12 +7,12 @@ import (
 
 	"github.com/konidev20/rapi/internal/errors"
 	"github.com/konidev20/rapi/internal/index"
+	rtest "github.com/konidev20/rapi/internal/test"
 	"github.com/konidev20/rapi/repository"
 	"github.com/konidev20/rapi/restic"
-	rtest "github.com/konidev20/rapi/internal/test"
 )
 
-var repoFixture = filepath.Join("..", "repository", "testdata", "test-repo.tar.gz")
+var repoFixture = filepath.Join("..", "..", "repository", "testdata", "test-repo.tar.gz")
 
 func TestRepositoryForAllIndexes(t *testing.T) {
 	repodir, cleanup := rtest.Env(t, repoFixture)
