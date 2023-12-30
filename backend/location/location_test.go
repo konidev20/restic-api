@@ -3,8 +3,8 @@ package location_test
 import (
 	"testing"
 
+	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/backend/location"
-	"github.com/konidev20/rapi/restic"
 	"github.com/konidev20/rapi/internal/test"
 )
 
@@ -13,7 +13,7 @@ type testConfig struct {
 }
 
 func testFactory() location.Factory {
-	return location.NewHTTPBackendFactory[testConfig, restic.Backend](
+	return location.NewHTTPBackendFactory[testConfig, backend.Backend](
 		"local",
 		func(s string) (*testConfig, error) {
 			return &testConfig{loc: s}, nil

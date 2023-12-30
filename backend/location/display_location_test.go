@@ -3,15 +3,15 @@ package location_test
 import (
 	"testing"
 
+	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/backend/location"
-	"github.com/konidev20/rapi/restic"
 	"github.com/konidev20/rapi/internal/test"
 )
 
 func TestStripPassword(t *testing.T) {
 	registry := location.NewRegistry()
 	registry.Register(
-		location.NewHTTPBackendFactory[any, restic.Backend]("test", nil,
+		location.NewHTTPBackendFactory[any, backend.Backend]("test", nil,
 			func(s string) string {
 				return "cleaned"
 			}, nil, nil,

@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/backend"
 	rtest "github.com/konidev20/rapi/internal/test"
 )
 
@@ -49,7 +49,7 @@ func TestLayout(t *testing.T) {
 			}
 
 			packs := make(map[string]bool)
-			err = be.List(context.TODO(), restic.PackFile, func(fi restic.FileInfo) error {
+			err = be.List(context.TODO(), backend.PackFile, func(fi backend.FileInfo) error {
 				packs[fi.Name] = false
 				return nil
 			})

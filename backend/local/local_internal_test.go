@@ -8,7 +8,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/konidev20/rapi/restic"
+	"github.com/konidev20/rapi/backend"
 	rtest "github.com/konidev20/rapi/internal/test"
 
 	"github.com/cenkalti/backoff/v4"
@@ -32,7 +32,7 @@ func TestNoSpacePermanent(t *testing.T) {
 		rtest.OK(t, be.Close())
 	}()
 
-	h := restic.Handle{Type: restic.ConfigFile}
+	h := backend.Handle{Type: backend.ConfigFile}
 	err = be.Save(context.Background(), h, nil)
 	_, ok := err.(*backoff.PermanentError)
 	rtest.Assert(t, ok,

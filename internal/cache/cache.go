@@ -9,6 +9,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
+	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/internal/debug"
 	"github.com/konidev20/rapi/internal/fs"
 	"github.com/konidev20/rapi/restic"
@@ -234,7 +235,7 @@ func IsOld(t time.Time, maxAge time.Duration) bool {
 }
 
 // Wrap returns a backend with a cache.
-func (c *Cache) Wrap(be restic.Backend) restic.Backend {
+func (c *Cache) Wrap(be backend.Backend) backend.Backend {
 	return newBackend(be, c)
 }
 

@@ -6,9 +6,9 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/konidev20/rapi/backend"
 	"github.com/konidev20/rapi/internal/errors"
 	"github.com/konidev20/rapi/internal/options"
-	"github.com/konidev20/rapi/restic"
 )
 
 // Config contains all configuration necessary to connect to an b2 compatible
@@ -82,7 +82,7 @@ func ParseConfig(s string) (*Config, error) {
 	return &cfg, nil
 }
 
-var _ restic.ApplyEnvironmenter = &Config{}
+var _ backend.ApplyEnvironmenter = &Config{}
 
 // ApplyEnvironment saves values from the environment to the config.
 func (cfg *Config) ApplyEnvironment(prefix string) {
